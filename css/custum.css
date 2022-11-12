@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'abelregular';
+    src: url('../font/abel-regular-webfont.woff2') format('woff2'),
+        url('../font/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pinyon_scriptregular';
+    src: url('../font/pinyonscript-regular-webfont.woff2') format('woff2'),
+        url('../font/pinyonscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'abelregular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+
+}
+
+.hero {
+    background-image: url('../images/pics1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin: 10px;
+    padding: 0px 15px;
+}
+
+.logo {
+    color: rgb(208, 7, 7);
+    font-style: italic;
+    font-size: 30px;
+}
+
+.order {
+    padding: 10px 35px;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.readmore {
+    padding: 10px 35px;
+    background-color: rgb(208, 7, 7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.hero-p {
+    font-size: 20px;
+}
+
+.hero-section {
+    color: white;
+    padding: 300px 120px;
+
+}
+
+.nav-bar ul li a:hover {
+    background-color: rgb(208, 7, 7);
+    color: white;
+    padding: 10px 20px;
+}
+
+#content {
+    height: 472px;
+    color: white;
+    background-color: crimson;
+}
+
+#content2 {
+    margin-top: -5px;
+    height: 451px;
+    color: white;
+    background-color: green;
+}
+
+.content {
+    font-size: 30px;
+}
+
+.pic2 {
+    margin-top: -5px;
+}
+
+.red {
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.contact-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container img {
+    width: 100%;
+
+}
+
+.food-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.food-container img {
+    width: 100%;
+    position: relative;
+}
+
+form {
+    padding: 10px 25px;
+    padding-bottom: 5px;
+}
+
+/* .icons {
+    position: absolute;
+    top: 71rem;
+    color: white;
+    display: flex;
+}
+
+.promoted {
+    background-color: green;
+    padding: 0 10px;
+    border-radius: 5px;
+} */
+
+/* #star {
+    position: absolute;
+    left: 0;
+    bottom: -18rem;
+    transform: translateX(23rem);
+    background-color: green;
+    padding: 0 10px;
+    margin: 0 -5px;
+    border-radius: 5px;
+} */
+label {
+    color: white;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+
+
+.form-title {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding-top: 150px;
+}
+
+#form {
+    background-color: crimson;
+
+
+}
+.form-title{font-size: 30px;}
+
+.order-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn {
+    padding: 5px 15px;
+}
+
+.article {
+    border: 1px solid gray;
+    box-shadow: 0px 0px 2px rgb(62, 61, 61);
+    margin: 10px;
+}
+
+.height {
+    line-height: 40px;
+    padding: 10px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+
+
+/* .fa-heart {
+    position: absolute;
+    left: 27rem;
+
+} */
+
+.lorem {
+    line-height: 30px;
+}
+
+.food-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+}
+
+.food-nav a {
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+@media only screen and (max-width:900px){
+    
+    .nav-bar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: whitesmoke;
+        height: 40vh;
+        width: 60%;
+        padding: 0 20px;
+        transform: translateX(-100%);
+        transition: transform .5s ease-in-out;
+
+    }
+
+    .nav-icon {
+        display: block;
+        font-size: 1.5rem;
+        height: 35px;
+        width: 50px;
+        text-align: center;
+        border: 1px solid gray;
+    }
+
+    .active {
+        transform: translateX(0%);
+    }
+
+    .nav-bar ul {
+        display: block;
+        margin-top: 50px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        display: block;
+        padding: 10px 25px;
+        width: 100%;
+    }
+
+    .nav-bar ul li a:hover {
+        background: crimson;
+    }
+
+}
+@media only screen and (max-width:600px) {
+
+
+    #content {
+        width: 100%;
+    }
+
+    #content2 {
+        width: 100%;
+
+    }
+
+    .lorem {
+        line-height: 20px;
+    }
+
+    .red {
+        width: 100%;
+        padding: 15px;
+
+    }
+
+    .green {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .food-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #form {
+        width: 100%;
+
+    }
+    
+}
+@media only screen and (min-width:600px) and (max-width:968px){
+    #form{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:968px){
+    #form {
+        background-color: crimson;
+        height: auto;
+    
+    }
+}
