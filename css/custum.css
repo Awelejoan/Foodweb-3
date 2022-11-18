@@ -25,6 +25,7 @@ h3 {
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -48,6 +49,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(51, 46, 46);
+    background-blend-mode: soft-light;
     height: 450px;
 
 }
@@ -59,7 +62,7 @@ ul {
 
 .nav-bar ul li a {
     text-decoration: none;
-    color: black;
+    color:gray;
     font-size: 20px;
     display: block;
  padding: 5px 5px; 
@@ -189,6 +192,7 @@ h1 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 
@@ -252,21 +256,29 @@ textarea {
 }
 
 .article {
-    border: 1px solid gray;
-    box-shadow: 0px 0px 2px rgb(62, 61, 61);
+    border: 0px solid rgb(246, 245, 245);
+    box-shadow: 0px 0px 2px rgb(118, 115, 115);
     margin: 10px;
     position: relative;
 }
-
-.promoted {
+.icons{display: flex;}
+.fa-heart{
     position: absolute;
-    top: -2px;
-    padding: 2px 5px;
-    background-color: green;
-    border-radius: 3px;
+    right: 0;
     color: white;
 }
-
+#star{
+    position: absolute;
+    bottom: 42%;
+    right: 0;
+}
+.badge-sucess{
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+    
 button {
     background-color: rgb(203, 6, 6);
     border: none;
@@ -281,33 +293,19 @@ button {
     height: 800px;
 }
 
-.fa-heart {
-    position: absolute;
-    left: 20rem;
-    top: 5px;
-    color: white;
-}
-
-#star {
-    position: absolute;
-    top: 14.5rem;
-    left: 15.5rem;
-    background-color: green;
-    border-radius: 3px;
-    padding:  2px 5px;
-    color: white;
-
-}
-
-
-
 .height {
     line-height: 40px;
     padding: 10px;
+    width: 100%;
 }
 
 .nav-icon {
     display: none;
+}
+.height-content{display: flex;}
+
+#vegrow{
+   margin-left: 80px; 
 }
 
 
@@ -316,57 +314,45 @@ button {
 }
 
 .food-nav {
+    width: 100% !important;
     display: flex;
     justify-content: space-between;
-    margin: 10px 120px;
+    
 }
 
 .food-nav a {
     font-size: 1.5rem;
     color: red;
-    text-decoration: none;
+
 }
 
 @media only screen and (max-width:600px) {
-header{
-    padding: 0 20px;
-}
-.food-nav{
-    margin: 10px 50px;
-}
-    .food-nav h2 {
-        position: relative;
+    
+    .food-nav {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between ;
         
     }
     .food-nav a{
-        position: relative;
-        left: 100px;
-        padding: 0 25px;
+        margin-left: 115px;
+    }
     
-    }  
+    #vegrow{
+        margin-left: 85px; 
+     }
+    .pics5{
+        display: none;
+    }
+   
+header{
+    padding: 0 20px;
+}
+
 
 .article{
     position: relative;
 } 
-#vegrow{margin-left: 15px;}   
-.fa-heart {
-    position: absolute;
-    left: 95%;
-    top: 5px;
-    color: white;
-}
-.icon{width: 100%;}
- #star{
-    width: 90px;
-    height: 20px;
-    padding: 0 5px;
-     position: absolute;
-    left: 80%;
-    top: 228px;
-    background-color: green;
-    color: white; 
-}
-
 
     #content {
         width: 100%;
@@ -408,111 +394,15 @@ header{
 }
 
 @media only screen and (min-width:600px){
-    .article{
-        position: relative;
-    } 
-    .food-nav h2 {
-        position: relative;
-    }
     .food-nav a{
-        position: relative;
-        left: 250px;
-        padding: 0 30px;
+        margin-left: 25rem;
     }
-     
-    .fa-heart {
-        position: absolute;
-        left: 95%;
-        top: 5px;
-        color: white;
-    }
-    .icon{width: 100%;}
-     #star{
-        width: 90px;
-        height: 20px;
-        padding: 0 5px;
-         position: absolute;
-        left: 82%;
-        
-        background-color: green;
-        color: white; 
     
-    }
+    #vegrow{
+        margin-left: 100px; 
+     }
+
 }
-
-@media only screen and (min-width:768px){
-    .article{
-        position: relative;
-    }   
-    .food-nav h2 {
-        position: relative;
-    }
-    .food-nav a{
-        position: relative;
-        left: 150px;
-        padding: 0 30px;
-    }
-
-    .fa-heart {
-        position: absolute;
-        left: 95%;
-        top: 5px;
-        color: white;
-    }
-    .icon{width: 100%;}
-     #star{
-        width: 90px;
-        height: 20px;
-        padding: 0 5px;
-         position: absolute;
-        left: 85%;
-        
-        background-color: green;
-        color: white; 
-    
-    }
-  }
-
-  
-@media only screen and (min-width:992px){
-    
-    .article{
-        position: relative;
-    }    
-    .fa-heart {
-        position: absolute;
-        left: 95%;
-        top: 5px;
-        color: white;
-    }
-    .icon{width: 100%;}
-     #star{
-        justify-content: space-around;
-        width: 90px;
-        height: 20px;
-        position: absolute;
-        left: 65%;
-        
-        background-color: green;
-        color: white; 
-    
-    }
-  }
-  @media only screen and (min-width:1200px){
-    .icon{width: 100%;}
-     #star{
-        justify-content: space-around;
-        width: 90px;
-        height: 20px;
-        position: absolute;
-        left: 71%;
-        
-        background-color: green;
-        color: white; 
-    
-    } 
-  }
-
 
 @media only screen and (max-width:900px) {
     .nav-bar {
@@ -533,6 +423,7 @@ header{
         font-size: 1.5rem;
         height: 35px;
         width: 50px;
+        padding: 5px 0;
         text-align: center;
         border: 1px solid gray;
     }
@@ -542,6 +433,7 @@ header{
     }
 
     .nav-bar ul {
+        width: fit-content;
         display: block;
         margin-top: 50px;
 
@@ -559,9 +451,18 @@ header{
 
     .nav-bar ul li a:hover {
         background: crimson;
+        padding: 0 25px;
     }
 }
 
-@media only screen and (min-width:901px) and (max-width:968px) {
-    #pics1{display: none;}
+@media only screen and (min-width:992px) and (max-width:1250px) {
+    .food-nav {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between   
+    }
+    
+    #vegrow{
+        margin-left: 30px; 
+     }   
 }
