@@ -63,7 +63,8 @@ ul {
 .nav-bar ul li a {
     text-decoration: none;
     color:gray;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     display: block;
  padding: 5px 5px; 
     margin:0 5px;
@@ -114,14 +115,14 @@ h1 {
     color: white;
 }
 
-#pics1 {
+.pics1 {
     background-image: url('../images/pics1.jpg');
     background-size: cover;
     background-position: center;
     height: 470px;
 }
 
-#pics3 {
+.pics3 {
     background-image: url('../images/pics3.jpg');
     background-size: cover;
     background-position: center;
@@ -213,6 +214,12 @@ input[type=text] {
     border: 1px solid white;
 
 }
+::placeholder {
+    color: rgb(202, 195, 195);
+    font-size: 16px;
+    
+  }
+  
 
 
 .form-title {
@@ -326,17 +333,18 @@ button {
 
 }
 
+
 @media only screen and (max-width:600px) {
     
     .food-nav {
         width: 100% !important;
         display: flex;
         justify-content: space-between ;
-        
     }
-    .food-nav a{
-        margin-left: 115px;
-    }
+    
+     .food-nav a{
+        margin-left: 11rem;
+    } 
     
     #vegrow{
         margin-left: 85px; 
@@ -395,15 +403,21 @@ header{
 
 @media only screen and (min-width:600px){
     .food-nav a{
-        margin-left: 25rem;
+        margin-left: 23rem;
     }
-    
+    /* .pics5{display: none;} */
     #vegrow{
-        margin-left: 100px; 
+        margin-left: 20rem; 
      }
 
 }
 
+@media only screen and (min-width:769px) and (max-width:991px){
+    .food-nav{width: 100%;}
+    .food-nav a{
+        margin-left: 28rem;
+    }
+}
 @media only screen and (max-width:900px) {
     .nav-bar {
         position: fixed;
@@ -446,7 +460,7 @@ header{
         display: block;
         padding: 10px 25px;
         width: 100%;
-        line-height: 60px;
+        line-height: 50px;
     }
 
     .nav-bar ul li a:hover {
@@ -464,5 +478,6 @@ header{
     
     #vegrow{
         margin-left: 30px; 
-     }   
+     } 
+     .pics{display: block;}  
 }

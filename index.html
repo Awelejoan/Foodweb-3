@@ -56,7 +56,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12">
-                <div id="pics1"></div>
+                <div class="pics1"></div>
             </div>
             <div id="content" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="red">
@@ -96,7 +96,7 @@
             </div>
 
             <div class="col-md-6 pic2 col-sm-12 col-xs-12">
-                <div id="pics3"></div>
+                <div class="pics3"></div>
             </div>
         </div>
     </div>
@@ -147,7 +147,7 @@
                             <div class="col-md-6"><i class="fa fa-clock">15-30min</i></div>
                             <div id="vegrow" class="col-md-6">#1200 for two</div>
                         </div>
-                        <button class="btn">Offer</button> Use coupon code
+                        <button id="btn">Offer</button> Use coupon code
                     </div>
 
                 </div>
@@ -194,7 +194,7 @@
                     <input type="text" placeholder="Email"><br><br>
 
                     <label>Your Location</label><br>
-                    <input type="text" placeholder="Oshodi"><br><br>
+                    <input type="text" placeholder="Oshodi" class="text"><br><br>
 
                     <label>Example Textarea</label><br>
                     <textarea ></textarea>
@@ -206,8 +206,10 @@
     <script>
         const menu = document.querySelector('.nav-icon')
         const nav = document.querySelector('.nav-bar')
-        menu.addEventListener('click', function () {
+        menu.addEventListener('click', function (e) {
+            e.preventDefault()
             nav.classList.toggle('active')
+           
         })
  
     </script>
